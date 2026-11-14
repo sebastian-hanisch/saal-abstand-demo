@@ -1,0 +1,1883 @@
+{
+ "meta": {
+  "sweep_seeds": [
+   100000,
+   100099
+  ],
+  "sub_seed_stride": 1000,
+  "tlimit": 20.0
+ },
+ "rsa": {
+  "reihe": [
+   {
+    "n": 6,
+    "exact": 2.8888888888888893,
+    "sim": 2.8849,
+    "sim_se": 0.00225673528414547,
+    "capacity": 3
+   },
+   {
+    "n": 10,
+    "exact": 4.620317460317461,
+    "sim": 4.61955,
+    "sim_se": 0.0034330713907460035,
+    "capacity": 5
+   },
+   {
+    "n": 16,
+    "exact": 7.214314809235445,
+    "sim": 7.21255,
+    "sim_se": 0.004177858015763579,
+    "capacity": 8
+   },
+   {
+    "n": 20,
+    "exact": 8.943644242778953,
+    "sim": 8.9393,
+    "sim_se": 0.0046034590355247635,
+    "capacity": 10
+   },
+   {
+    "n": 50,
+    "exact": 21.913614994229764,
+    "sim": 21.91325,
+    "sim_se": 0.006944683816176611,
+    "capacity": 25
+   },
+   {
+    "n": 100,
+    "exact": 43.53023291331445,
+    "sim": 43.53305,
+    "sim_se": 0.00969433256491616,
+    "capacity": 50
+   }
+  ],
+  "raster": [
+   {
+    "rule": "ROW",
+    "seats": 160,
+    "capacity": 80,
+    "free": 72.17,
+    "free_se": 0.1322609724148458,
+    "ff": 80.0,
+    "n": 200
+   },
+   {
+    "rule": "MANH",
+    "seats": 160,
+    "capacity": 80,
+    "free": 60.585,
+    "free_se": 0.22239869807290377,
+    "ff": 80.0,
+    "n": 200
+   },
+   {
+    "rule": "KING",
+    "seats": 160,
+    "capacity": 40,
+    "free": 33.49,
+    "free_se": 0.13818456814844363,
+    "ff": 40.0,
+    "n": 200
+   }
+  ]
+ },
+ "gruppen": [
+  {
+   "rule": "ROW",
+   "g": 1,
+   "persons": 80,
+   "status": 0,
+   "seats": 160,
+   "formula": 80
+  },
+  {
+   "rule": "ROW",
+   "g": 2,
+   "persons": 100,
+   "status": 0,
+   "seats": 160,
+   "formula": 100
+  },
+  {
+   "rule": "ROW",
+   "g": 3,
+   "persons": 120,
+   "status": 0,
+   "seats": 160,
+   "formula": 120
+  },
+  {
+   "rule": "ROW",
+   "g": 4,
+   "persons": 120,
+   "status": 0,
+   "seats": 160,
+   "formula": 120
+  },
+  {
+   "rule": "ROW",
+   "g": 5,
+   "persons": 100,
+   "status": 0,
+   "seats": 160,
+   "formula": 100
+  },
+  {
+   "rule": "ROW",
+   "g": 6,
+   "persons": 120,
+   "status": 0,
+   "seats": 160,
+   "formula": 120
+  },
+  {
+   "rule": "MANH",
+   "g": 1,
+   "persons": 80,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "MANH",
+   "g": 2,
+   "persons": 80,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "MANH",
+   "g": 3,
+   "persons": 75,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "MANH",
+   "g": 4,
+   "persons": 80,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "MANH",
+   "g": 5,
+   "persons": 75,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "MANH",
+   "g": 6,
+   "persons": 60,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "KING",
+   "g": 1,
+   "persons": 40,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "KING",
+   "g": 2,
+   "persons": 50,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "KING",
+   "g": 3,
+   "persons": 60,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "KING",
+   "g": 4,
+   "persons": 60,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "KING",
+   "g": 5,
+   "persons": 50,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  },
+  {
+   "rule": "KING",
+   "g": 6,
+   "persons": 60,
+   "status": 0,
+   "seats": 160,
+   "formula": null
+  }
+ ],
+ "verhalten": [
+  {
+   "hall": "gleich",
+   "dist": "einzel",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 64.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 57.83,
+     "persons_se": 0.15573546594637763,
+     "share": 0.90359375,
+     "share_se": 0.0024333666554121505
+    },
+    "MITTE": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 53.0,
+     "persons_se": 0.0,
+     "share": 0.828125,
+     "share_se": 0.0
+    },
+    "WEIT_R": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_W": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "hall": "gleich",
+   "dist": "einzel",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 64.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 57.83,
+     "persons_se": 0.15573546594637763,
+     "share": 0.90359375,
+     "share_se": 0.0024333666554121505
+    },
+    "MITTE": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 53.0,
+     "persons_se": 0.0,
+     "share": 0.828125,
+     "share_se": 0.0
+    },
+    "WEIT_R": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_W": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "hall": "gleich",
+   "dist": "paare",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 89.67,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 89.03,
+     "persons_se": 0.1329198132998868,
+     "share": 0.9929084683409137,
+     "share_se": 0.0014279189786773761
+    },
+    "BF": {
+     "persons": 89.03,
+     "persons_se": 0.1329198132998868,
+     "share": 0.9929084683409137,
+     "share_se": 0.0014279189786773761
+    },
+    "FREI": {
+     "persons": 76.08,
+     "persons_se": 0.36973372892262657,
+     "share": 0.8485277364680403,
+     "share_se": 0.004206424682475585
+    },
+    "MITTE": {
+     "persons": 85.11,
+     "persons_se": 0.23001756630327347,
+     "share": 0.9492194222120269,
+     "share_se": 0.002643194185910133
+    },
+    "WEIT_E": {
+     "persons": 81.2,
+     "persons_se": 0.3781934730138835,
+     "share": 0.9056106044930143,
+     "share_se": 0.004267601513602225
+    },
+    "WEIT_R": {
+     "persons": 78.73,
+     "persons_se": 0.3770847773285595,
+     "share": 0.8780467473630723,
+     "share_se": 0.004205617139119595
+    },
+    "WEIT_W": {
+     "persons": 69.47,
+     "persons_se": 0.3649975785169435,
+     "share": 0.7748270681163139,
+     "share_se": 0.004184550929354402
+    }
+   }
+  },
+  {
+   "hall": "gleich",
+   "dist": "paare",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 98.33,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 90.84,
+     "persons_se": 0.21868292622475632,
+     "share": 0.9238504088092845,
+     "share_se": 0.0016668577025329228
+    },
+    "BF": {
+     "persons": 90.84,
+     "persons_se": 0.21868292622475632,
+     "share": 0.9238504088092845,
+     "share_se": 0.0016668577025329228
+    },
+    "FREI": {
+     "persons": 80.12,
+     "persons_se": 0.3429756889814834,
+     "share": 0.8148302654530734,
+     "share_se": 0.003244591029320491
+    },
+    "MITTE": {
+     "persons": 87.49,
+     "persons_se": 0.2580012528354203,
+     "share": 0.8897536716401184,
+     "share_se": 0.0020912942744410645
+    },
+    "WEIT_E": {
+     "persons": 84.47,
+     "persons_se": 0.34508233536624006,
+     "share": 0.8590177167404751,
+     "share_se": 0.003095476000730483
+    },
+    "WEIT_R": {
+     "persons": 81.5,
+     "persons_se": 0.3862536979653647,
+     "share": 0.8287062585542576,
+     "share_se": 0.0033465608345623165
+    },
+    "WEIT_W": {
+     "persons": 74.69,
+     "persons_se": 0.3778447653027188,
+     "share": 0.7597976646993918,
+     "share_se": 0.004031619541647102
+    }
+   }
+  },
+  {
+   "hall": "gleich",
+   "dist": "familie",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 90.43,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 90.43,
+     "persons_se": 0.14160337266998677,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 90.43,
+     "persons_se": 0.14160337266998677,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 79.35,
+     "persons_se": 0.4200468949288805,
+     "share": 0.8777220014808416,
+     "share_se": 0.004928930361977636
+    },
+    "MITTE": {
+     "persons": 88.53,
+     "persons_se": 0.23374638764561417,
+     "share": 0.9792237851205211,
+     "share_se": 0.0029913923091578233
+    },
+    "WEIT_E": {
+     "persons": 88.46,
+     "persons_se": 0.30794857238234313,
+     "share": 0.9783418578278104,
+     "share_se": 0.0034222483435550647
+    },
+    "WEIT_R": {
+     "persons": 81.61,
+     "persons_se": 0.46141963634860705,
+     "share": 0.9027033580858039,
+     "share_se": 0.0053354654946642655
+    },
+    "WEIT_W": {
+     "persons": 77.4,
+     "persons_se": 0.4842989309769892,
+     "share": 0.8560392630348932,
+     "share_se": 0.005401107352079708
+    }
+   }
+  },
+  {
+   "hall": "gleich",
+   "dist": "familie",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 107.43,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 100.45,
+     "persons_se": 0.20119591939151743,
+     "share": 0.9350739615157724,
+     "share_se": 0.0016920038522406375
+    },
+    "BF": {
+     "persons": 100.45,
+     "persons_se": 0.20018930434905252,
+     "share": 0.9350773285191393,
+     "share_se": 0.0017009397040005365
+    },
+    "FREI": {
+     "persons": 85.99,
+     "persons_se": 0.3633444535412532,
+     "share": 0.8005516388253584,
+     "share_se": 0.0035022394676114967
+    },
+    "MITTE": {
+     "persons": 94.85,
+     "persons_se": 0.2975913407016509,
+     "share": 0.8829115233271742,
+     "share_se": 0.0025551359052212496
+    },
+    "WEIT_E": {
+     "persons": 94.86,
+     "persons_se": 0.3634903747353601,
+     "share": 0.8830045752461657,
+     "share_se": 0.003204263867096305
+    },
+    "WEIT_R": {
+     "persons": 88.95,
+     "persons_se": 0.4413878479560038,
+     "share": 0.8280119677842973,
+     "share_se": 0.004015688993616508
+    },
+    "WEIT_W": {
+     "persons": 80.6,
+     "persons_se": 0.4933906600598996,
+     "share": 0.7501192922870268,
+     "share_se": 0.004251234097239487
+    }
+   }
+  },
+  {
+   "hall": "gleich",
+   "dist": "gleich",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 90.58,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 90.58,
+     "persons_se": 0.15320152437461929,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 90.58,
+     "persons_se": 0.15320152437461929,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 78.34,
+     "persons_se": 0.5251685636079336,
+     "share": 0.8649567796755611,
+     "share_se": 0.005759526293314815
+    },
+    "MITTE": {
+     "persons": 83.93,
+     "persons_se": 0.5547326228267838,
+     "share": 0.9269867134792129,
+     "share_se": 0.0065118895528362055
+    },
+    "WEIT_E": {
+     "persons": 88.48,
+     "persons_se": 0.34096713310608967,
+     "share": 0.9769540053905981,
+     "share_se": 0.003756837312644564
+    },
+    "WEIT_R": {
+     "persons": 82.81,
+     "persons_se": 0.5020553714079712,
+     "share": 0.9143137382924549,
+     "share_se": 0.005499213901062208
+    },
+    "WEIT_W": {
+     "persons": 75.19,
+     "persons_se": 0.5788695008288992,
+     "share": 0.8302479161799182,
+     "share_se": 0.006445979137114798
+    }
+   }
+  },
+  {
+   "hall": "gleich",
+   "dist": "gleich",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 110.49,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 102.61,
+     "persons_se": 0.22736745500611913,
+     "share": 0.9286719981428234,
+     "share_se": 0.0017153723614556425
+    },
+    "BF": {
+     "persons": 102.65,
+     "persons_se": 0.2396862427205511,
+     "share": 0.9290291995000248,
+     "share_se": 0.0018210755423672868
+    },
+    "FREI": {
+     "persons": 86.42,
+     "persons_se": 0.4671382898223842,
+     "share": 0.7821629017354,
+     "share_se": 0.004139219032769612
+    },
+    "MITTE": {
+     "persons": 95.35,
+     "persons_se": 0.38438590667781414,
+     "share": 0.8630917615290759,
+     "share_se": 0.003614918165614583
+    },
+    "WEIT_E": {
+     "persons": 96.59,
+     "persons_se": 0.4067846326666451,
+     "share": 0.8742191145510533,
+     "share_se": 0.0035972819254010465
+    },
+    "WEIT_R": {
+     "persons": 90.61,
+     "persons_se": 0.5074983206420938,
+     "share": 0.8200539584792215,
+     "share_se": 0.004451449763650127
+    },
+    "WEIT_W": {
+     "persons": 82.23,
+     "persons_se": 0.5530183477329599,
+     "share": 0.7441194337943525,
+     "share_se": 0.004752308884803621
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "einzel",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 66.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 66.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 66.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 57.69,
+     "persons_se": 0.16738934231064986,
+     "share": 0.874090909090909,
+     "share_se": 0.0025362021562219663
+    },
+    "MITTE": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 0.9696969696969697,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 61.0,
+     "persons_se": 0.0,
+     "share": 0.9242424242424242,
+     "share_se": 0.0
+    },
+    "WEIT_R": {
+     "persons": 58.0,
+     "persons_se": 0.0,
+     "share": 0.8787878787878788,
+     "share_se": 0.0
+    },
+    "WEIT_W": {
+     "persons": 54.0,
+     "persons_se": 0.0,
+     "share": 0.8181818181818182,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "einzel",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 66.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 66.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 66.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 57.69,
+     "persons_se": 0.16738934231064986,
+     "share": 0.874090909090909,
+     "share_se": 0.0025362021562219663
+    },
+    "MITTE": {
+     "persons": 64.0,
+     "persons_se": 0.0,
+     "share": 0.9696969696969697,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 61.0,
+     "persons_se": 0.0,
+     "share": 0.9242424242424242,
+     "share_se": 0.0
+    },
+    "WEIT_R": {
+     "persons": 58.0,
+     "persons_se": 0.0,
+     "share": 0.8787878787878788,
+     "share_se": 0.0
+    },
+    "WEIT_W": {
+     "persons": 54.0,
+     "persons_se": 0.0,
+     "share": 0.8181818181818182,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "paare",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 89.67,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 89.13,
+     "persons_se": 0.1460973800054075,
+     "share": 0.9939939568360259,
+     "share_se": 0.0013819729659068959
+    },
+    "BF": {
+     "persons": 89.13,
+     "persons_se": 0.1460973800054075,
+     "share": 0.9939939568360259,
+     "share_se": 0.0013819729659068959
+    },
+    "FREI": {
+     "persons": 75.78,
+     "persons_se": 0.3500591580596259,
+     "share": 0.8451703147727397,
+     "share_se": 0.003958487440121433
+    },
+    "MITTE": {
+     "persons": 86.53,
+     "persons_se": 0.24431102878887556,
+     "share": 0.9650563392279697,
+     "share_se": 0.0028031266288255827
+    },
+    "WEIT_E": {
+     "persons": 81.3,
+     "persons_se": 0.4021407362070793,
+     "share": 0.9066791662817808,
+     "share_se": 0.00443298884471915
+    },
+    "WEIT_R": {
+     "persons": 75.69,
+     "persons_se": 0.37001091984978063,
+     "share": 0.8441497320700064,
+     "share_se": 0.004143523490113468
+    },
+    "WEIT_W": {
+     "persons": 72.78,
+     "persons_se": 0.4069050468742274,
+     "share": 0.8117322715201234,
+     "share_se": 0.004623955873214671
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "paare",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 98.35,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 90.8,
+     "persons_se": 0.2296241989148198,
+     "share": 0.9232382176890153,
+     "share_se": 0.0017698467770014394
+    },
+    "BF": {
+     "persons": 90.8,
+     "persons_se": 0.2296241989148198,
+     "share": 0.9232382176890153,
+     "share_se": 0.0017698467770014394
+    },
+    "FREI": {
+     "persons": 79.87,
+     "persons_se": 0.32400741979283143,
+     "share": 0.8121523260348699,
+     "share_se": 0.0031302416266047657
+    },
+    "MITTE": {
+     "persons": 88.32,
+     "persons_se": 0.26048905054636257,
+     "share": 0.8979661017992135,
+     "share_se": 0.0019500392190643341
+    },
+    "WEIT_E": {
+     "persons": 84.39,
+     "persons_se": 0.35158946445414363,
+     "share": 0.8579439327090178,
+     "share_se": 0.002964031082379048
+    },
+    "WEIT_R": {
+     "persons": 79.87,
+     "persons_se": 0.331709681998149,
+     "share": 0.8121624270552686,
+     "share_se": 0.003242317960449421
+    },
+    "WEIT_W": {
+     "persons": 78.3,
+     "persons_se": 0.3801913393877543,
+     "share": 0.7962970532582037,
+     "share_se": 0.003955528106515641
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "familie",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 90.43,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 90.43,
+     "persons_se": 0.14160337266998677,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 90.43,
+     "persons_se": 0.14160337266998677,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 80.04,
+     "persons_se": 0.37549159696847995,
+     "share": 0.8852722682236699,
+     "share_se": 0.004293157882888801
+    },
+    "MITTE": {
+     "persons": 89.12,
+     "persons_se": 0.23193520516286312,
+     "share": 0.9856243326383541,
+     "share_se": 0.0025160491965264156
+    },
+    "WEIT_E": {
+     "persons": 87.82,
+     "persons_se": 0.38986659204907465,
+     "share": 0.9712802280358018,
+     "share_se": 0.0043596076836367225
+    },
+    "WEIT_R": {
+     "persons": 83.61,
+     "persons_se": 0.4069832349561263,
+     "share": 0.9248874105399421,
+     "share_se": 0.004895298974051326
+    },
+    "WEIT_W": {
+     "persons": 72.73,
+     "persons_se": 0.5094768558694954,
+     "share": 0.8043973832396731,
+     "share_se": 0.005695082811062276
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "familie",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 107.86,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 100.5,
+     "persons_se": 0.18667748886377503,
+     "share": 0.9317891184343365,
+     "share_se": 0.0014962179374565202
+    },
+    "BF": {
+     "persons": 100.51,
+     "persons_se": 0.18721510342249353,
+     "share": 0.9318817427829414,
+     "share_se": 0.0015009597971642214
+    },
+    "FREI": {
+     "persons": 86.96,
+     "persons_se": 0.4362188311924059,
+     "share": 0.806232225413863,
+     "share_se": 0.0039369361267166635
+    },
+    "MITTE": {
+     "persons": 96.13,
+     "persons_se": 0.25688695780617027,
+     "share": 0.8913375820621926,
+     "share_se": 0.0024675332372989015
+    },
+    "WEIT_E": {
+     "persons": 94.14,
+     "persons_se": 0.36982660419677377,
+     "share": 0.8728218722408694,
+     "share_se": 0.0033308009992540307
+    },
+    "WEIT_R": {
+     "persons": 91.81,
+     "persons_se": 0.4165017855588825,
+     "share": 0.8511886041532347,
+     "share_se": 0.0037062524509917285
+    },
+    "WEIT_W": {
+     "persons": 79.73,
+     "persons_se": 0.46771635192559374,
+     "share": 0.7392112341341188,
+     "share_se": 0.004257663205462546
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "gleich",
+   "load": 0.7,
+   "seats": 128,
+   "offline_mean": 90.58,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 90.58,
+     "persons_se": 0.15320152437461929,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 90.58,
+     "persons_se": 0.15320152437461929,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 78.56,
+     "persons_se": 0.4932514264520374,
+     "share": 0.8675904946679881,
+     "share_se": 0.005723336635417183
+    },
+    "MITTE": {
+     "persons": 89.41,
+     "persons_se": 0.25029074003137736,
+     "share": 0.9872238536546866,
+     "share_se": 0.0027371705186863137
+    },
+    "WEIT_E": {
+     "persons": 87.94,
+     "persons_se": 0.40397519675836485,
+     "share": 0.971004294536142,
+     "share_se": 0.004471126213680635
+    },
+    "WEIT_R": {
+     "persons": 81.37,
+     "persons_se": 0.5186725480697933,
+     "share": 0.8983987355933025,
+     "share_se": 0.005668939136699386
+    },
+    "WEIT_W": {
+     "persons": 71.68,
+     "persons_se": 0.6118163056990161,
+     "share": 0.7915894283432264,
+     "share_se": 0.006926203804396955
+    }
+   }
+  },
+  {
+   "hall": "bogen",
+   "dist": "gleich",
+   "load": 1.0,
+   "seats": 128,
+   "offline_mean": 110.62,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 102.55,
+     "persons_se": 0.24510356500009864,
+     "share": 0.9270408249793024,
+     "share_se": 0.0018453194465783565
+    },
+    "BF": {
+     "persons": 102.58,
+     "persons_se": 0.24295321077578422,
+     "share": 0.927310305498783,
+     "share_se": 0.001811696432321719
+    },
+    "FREI": {
+     "persons": 86.62,
+     "persons_se": 0.4382656359752241,
+     "share": 0.7830949780615386,
+     "share_se": 0.00394157373967823
+    },
+    "MITTE": {
+     "persons": 96.91,
+     "persons_se": 0.32006785896655465,
+     "share": 0.8761764139753118,
+     "share_se": 0.0030231073370155814
+    },
+    "WEIT_E": {
+     "persons": 95.94,
+     "persons_se": 0.39563783050827295,
+     "share": 0.8672843080645838,
+     "share_se": 0.003375377851635042
+    },
+    "WEIT_R": {
+     "persons": 91.11,
+     "persons_se": 0.4458325545164537,
+     "share": 0.8236536909904595,
+     "share_se": 0.00393802070298769
+    },
+    "WEIT_W": {
+     "persons": 79.19,
+     "persons_se": 0.5611487136115334,
+     "share": 0.7158650166681986,
+     "share_se": 0.0049702772531428525
+    }
+   }
+  }
+ ],
+ "vorlage": [
+  {
+   "hall": "gleich",
+   "dist": "paare",
+   "load": 0.7,
+   "n": 100,
+   "ff_share": 0.9929084683409137,
+   "ff_se": 0.0014279189786773761,
+   "template_share": 0.9358794104843622,
+   "template_se": 0.005301945472541815
+  },
+  {
+   "hall": "gleich",
+   "dist": "paare",
+   "load": 1.0,
+   "n": 100,
+   "ff_share": 0.9238504088092845,
+   "ff_se": 0.0016668577025329228,
+   "template_share": 0.8919723213359997,
+   "template_se": 0.0034150000599543423
+  },
+  {
+   "hall": "gleich",
+   "dist": "familie",
+   "load": 0.7,
+   "n": 100,
+   "ff_share": 1.0,
+   "ff_se": 0.0,
+   "template_share": 0.9563224818751901,
+   "template_se": 0.006620411921149485
+  },
+  {
+   "hall": "gleich",
+   "dist": "familie",
+   "load": 1.0,
+   "n": 100,
+   "ff_share": 0.9350739615157724,
+   "ff_se": 0.0016920038522406375,
+   "template_share": 0.8981648097658731,
+   "template_se": 0.0034699554015951008
+  },
+  {
+   "hall": "gleich",
+   "dist": "gleich",
+   "load": 0.7,
+   "n": 100,
+   "ff_share": 1.0,
+   "ff_se": 0.0,
+   "template_share": 0.9521374737339039,
+   "template_se": 0.007499952160938745
+  },
+  {
+   "hall": "gleich",
+   "dist": "gleich",
+   "load": 1.0,
+   "n": 100,
+   "ff_share": 0.9286719981428234,
+   "ff_se": 0.0017153723614556425,
+   "template_share": 0.8713799693919776,
+   "template_se": 0.0042873011522341015
+  }
+ ],
+ "raster": [
+  {
+   "rule": "ROW",
+   "dist": "einzel",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 72.46,
+     "persons_se": 0.1805826708466264,
+     "share": 0.90575,
+     "share_se": 0.0022572833855828314
+    },
+    "MITTE": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 70.0,
+     "persons_se": 0.0,
+     "share": 0.875,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "rule": "ROW",
+   "dist": "einzel",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 72.46,
+     "persons_se": 0.1805826708466264,
+     "share": 0.90575,
+     "share_se": 0.0022572833855828314
+    },
+    "MITTE": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 70.0,
+     "persons_se": 0.0,
+     "share": 0.875,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "rule": "ROW",
+   "dist": "paare",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 123.2,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 113.525,
+     "persons_se": 0.37035585797778536,
+     "share": 0.9214950013997202,
+     "share_se": 0.0022985311676465086
+    },
+    "BF": {
+     "persons": 113.525,
+     "persons_se": 0.37035585797778536,
+     "share": 0.9214950013997202,
+     "share_se": 0.0022985311676465086
+    },
+    "FREI": {
+     "persons": 100.35,
+     "persons_se": 0.5735069802628878,
+     "share": 0.8146128877302224,
+     "share_se": 0.004600063238618812
+    },
+    "MITTE": {
+     "persons": 109.125,
+     "persons_se": 0.435871511295444,
+     "share": 0.8857590635372705,
+     "share_se": 0.002853267508948208
+    },
+    "WEIT_E": {
+     "persons": 106.75,
+     "persons_se": 0.5259301893812183,
+     "share": 0.8664442799720444,
+     "share_se": 0.0035048975961439245
+    }
+   }
+  },
+  {
+   "rule": "ROW",
+   "dist": "paare",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 127.95,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 113.525,
+     "persons_se": 0.37035585797778536,
+     "share": 0.8872806831602948,
+     "share_se": 0.002269850208993687
+    },
+    "BF": {
+     "persons": 113.525,
+     "persons_se": 0.37035585797778536,
+     "share": 0.8872806831602948,
+     "share_se": 0.002269850208993687
+    },
+    "FREI": {
+     "persons": 102.05,
+     "persons_se": 0.46678112149552,
+     "share": 0.7976504734803268,
+     "share_se": 0.003600594490806385
+    },
+    "MITTE": {
+     "persons": 109.125,
+     "persons_se": 0.435871511295444,
+     "share": 0.8528684906917497,
+     "share_se": 0.002765040201366387
+    },
+    "WEIT_E": {
+     "persons": 107.4,
+     "persons_se": 0.5284229075567876,
+     "share": 0.8393302492251475,
+     "share_se": 0.0032777950130005416
+    }
+   }
+  },
+  {
+   "rule": "ROW",
+   "dist": "familie",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 134.5,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 125.7,
+     "persons_se": 0.34380972674595495,
+     "share": 0.9345939394678666,
+     "share_se": 0.002041527311714232
+    },
+    "BF": {
+     "persons": 125.625,
+     "persons_se": 0.3390928698144129,
+     "share": 0.9340438685756753,
+     "share_se": 0.0020858078388441585
+    },
+    "FREI": {
+     "persons": 107.1,
+     "persons_se": 0.7388487232833497,
+     "share": 0.7963425023806499,
+     "share_se": 0.005491536361124862
+    },
+    "MITTE": {
+     "persons": 118.5,
+     "persons_se": 0.5850706729171206,
+     "share": 0.881013890626442,
+     "share_se": 0.003837468886054267
+    },
+    "WEIT_E": {
+     "persons": 118.325,
+     "persons_se": 0.6038206347702594,
+     "share": 0.8797374448666264,
+     "share_se": 0.004119323136112735
+    }
+   }
+  },
+  {
+   "rule": "ROW",
+   "dist": "familie",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 137.4,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 126.325,
+     "persons_se": 0.332796041334937,
+     "share": 0.9194841771238338,
+     "share_se": 0.0023490296324871146
+    },
+    "BF": {
+     "persons": 126.225,
+     "persons_se": 0.3192288384248066,
+     "share": 0.9187698914095479,
+     "share_se": 0.002386478146253061
+    },
+    "FREI": {
+     "persons": 111.05,
+     "persons_se": 0.7770341377842104,
+     "share": 0.8082479172281017,
+     "share_se": 0.005451312876633029
+    },
+    "MITTE": {
+     "persons": 120.075,
+     "persons_se": 0.5710847752416628,
+     "share": 0.8739603479335267,
+     "share_se": 0.003938717423847497
+    },
+    "WEIT_E": {
+     "persons": 120.05,
+     "persons_se": 0.5603913467733612,
+     "share": 0.8738084159203238,
+     "share_se": 0.004019534138455009
+    }
+   }
+  },
+  {
+   "rule": "MANH",
+   "dist": "einzel",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 60.8,
+     "persons_se": 0.3107501513525883,
+     "share": 0.76,
+     "share_se": 0.003884376891907354
+    },
+    "MITTE": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 53.0,
+     "persons_se": 0.0,
+     "share": 0.6625,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "rule": "MANH",
+   "dist": "einzel",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 60.8,
+     "persons_se": 0.3107501513525883,
+     "share": 0.76,
+     "share_se": 0.003884376891907354
+    },
+    "MITTE": {
+     "persons": 80.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 53.0,
+     "persons_se": 0.0,
+     "share": 0.6625,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "rule": "MANH",
+   "dist": "paare",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 70.525,
+     "persons_se": 0.30379543555930305,
+     "share": 0.8815625,
+     "share_se": 0.003797442944491288
+    },
+    "BF": {
+     "persons": 71.95,
+     "persons_se": 0.3668123253808166,
+     "share": 0.899375,
+     "share_se": 0.004585154067260206
+    },
+    "FREI": {
+     "persons": 63.875,
+     "persons_se": 0.34378641998209086,
+     "share": 0.7984375,
+     "share_se": 0.004297330249776135
+    },
+    "MITTE": {
+     "persons": 73.475,
+     "persons_se": 0.3358637925997489,
+     "share": 0.9184374999999999,
+     "share_se": 0.004198297407496862
+    },
+    "WEIT_E": {
+     "persons": 61.45,
+     "persons_se": 0.44857323673838223,
+     "share": 0.7681250000000001,
+     "share_se": 0.005607165459229778
+    }
+   }
+  },
+  {
+   "rule": "MANH",
+   "dist": "paare",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 70.525,
+     "persons_se": 0.30379543555930305,
+     "share": 0.8815625,
+     "share_se": 0.003797442944491288
+    },
+    "BF": {
+     "persons": 71.95,
+     "persons_se": 0.3668123253808166,
+     "share": 0.899375,
+     "share_se": 0.004585154067260206
+    },
+    "FREI": {
+     "persons": 64.625,
+     "persons_se": 0.3073616011250492,
+     "share": 0.8078125,
+     "share_se": 0.003842020014063115
+    },
+    "MITTE": {
+     "persons": 73.475,
+     "persons_se": 0.3358637925997489,
+     "share": 0.9184374999999999,
+     "share_se": 0.004198297407496862
+    },
+    "WEIT_E": {
+     "persons": 62.5,
+     "persons_se": 0.35626265159721265,
+     "share": 0.78125,
+     "share_se": 0.0044532831449651585
+    }
+   }
+  },
+  {
+   "rule": "MANH",
+   "dist": "familie",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 70.075,
+     "persons_se": 0.4420051919871414,
+     "share": 0.8759375,
+     "share_se": 0.005525064899839266
+    },
+    "BF": {
+     "persons": 69.925,
+     "persons_se": 0.40885628469972374,
+     "share": 0.8740625,
+     "share_se": 0.005110703558746546
+    },
+    "FREI": {
+     "persons": 61.475,
+     "persons_se": 0.5076182444034907,
+     "share": 0.7684375,
+     "share_se": 0.006345228055043635
+    },
+    "MITTE": {
+     "persons": 71.5,
+     "persons_se": 0.4098154681667323,
+     "share": 0.89375,
+     "share_se": 0.005122693352084152
+    },
+    "WEIT_E": {
+     "persons": 61.625,
+     "persons_se": 0.540284231939126,
+     "share": 0.7703125,
+     "share_se": 0.006753552899239074
+    }
+   }
+  },
+  {
+   "rule": "MANH",
+   "dist": "familie",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 80.0,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 70.775,
+     "persons_se": 0.38144042112995163,
+     "share": 0.8846875000000001,
+     "share_se": 0.004768005264124394
+    },
+    "BF": {
+     "persons": 70.75,
+     "persons_se": 0.34853171874932554,
+     "share": 0.884375,
+     "share_se": 0.004356646484366568
+    },
+    "FREI": {
+     "persons": 63.475,
+     "persons_se": 0.5604342409788489,
+     "share": 0.7934375,
+     "share_se": 0.007005428012235611
+    },
+    "MITTE": {
+     "persons": 72.55,
+     "persons_se": 0.38555654080023877,
+     "share": 0.906875,
+     "share_se": 0.004819456760002985
+    },
+    "WEIT_E": {
+     "persons": 63.5,
+     "persons_se": 0.5615911461059686,
+     "share": 0.79375,
+     "share_se": 0.0070198893263246085
+    }
+   }
+  },
+  {
+   "rule": "KING",
+   "dist": "einzel",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 40.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 40.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 40.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 33.51,
+     "persons_se": 0.18882678717691395,
+     "share": 0.8377500000000001,
+     "share_se": 0.004720669679422848
+    },
+    "MITTE": {
+     "persons": 40.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 30.0,
+     "persons_se": 0.0,
+     "share": 0.75,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "rule": "KING",
+   "dist": "einzel",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 40.0,
+   "offline_optimal": 100,
+   "n": 100,
+   "behaviours": {
+    "FF": {
+     "persons": 40.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "BF": {
+     "persons": 40.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "FREI": {
+     "persons": 33.51,
+     "persons_se": 0.18882678717691395,
+     "share": 0.8377500000000001,
+     "share_se": 0.004720669679422848
+    },
+    "MITTE": {
+     "persons": 40.0,
+     "persons_se": 0.0,
+     "share": 1.0,
+     "share_se": 0.0
+    },
+    "WEIT_E": {
+     "persons": 30.0,
+     "persons_se": 0.0,
+     "share": 0.75,
+     "share_se": 0.0
+    }
+   }
+  },
+  {
+   "rule": "KING",
+   "dist": "paare",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 64.8,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 56.4,
+     "persons_se": 0.31378581622109447,
+     "share": 0.8703425918628275,
+     "share_se": 0.004454218109132768
+    },
+    "BF": {
+     "persons": 56.4,
+     "persons_se": 0.31378581622109447,
+     "share": 0.8703425918628275,
+     "share_se": 0.004454218109132768
+    },
+    "FREI": {
+     "persons": 47.55,
+     "persons_se": 0.4908783336648079,
+     "share": 0.7337180941497028,
+     "share_se": 0.007264596032919301
+    },
+    "MITTE": {
+     "persons": 54.375,
+     "persons_se": 0.2671969886979095,
+     "share": 0.8391158671986029,
+     "share_se": 0.0038119916489326084
+    },
+    "WEIT_E": {
+     "persons": 48.05,
+     "persons_se": 0.4895707172406119,
+     "share": 0.7414978548034388,
+     "share_se": 0.0073966512555592116
+    }
+   }
+  },
+  {
+   "rule": "KING",
+   "dist": "paare",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 65.0,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 56.4,
+     "persons_se": 0.31378581622109447,
+     "share": 0.8676923076923078,
+     "share_se": 0.004827474095709146
+    },
+    "BF": {
+     "persons": 56.4,
+     "persons_se": 0.31378581622109447,
+     "share": 0.8676923076923078,
+     "share_se": 0.004827474095709146
+    },
+    "FREI": {
+     "persons": 47.6,
+     "persons_se": 0.48410636678210955,
+     "share": 0.7323076923076923,
+     "share_se": 0.0074477902581863015
+    },
+    "MITTE": {
+     "persons": 54.375,
+     "persons_se": 0.2671969886979095,
+     "share": 0.8365384615384615,
+     "share_se": 0.00411072290304476
+    },
+    "WEIT_E": {
+     "persons": 48.05,
+     "persons_se": 0.4895707172406119,
+     "share": 0.7392307692307692,
+     "share_se": 0.007531857188317108
+    }
+   }
+  },
+  {
+   "rule": "KING",
+   "dist": "familie",
+   "load": 1.0,
+   "seats": 160,
+   "offline_mean": 69.3,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 62.725,
+     "persons_se": 0.25567281776440326,
+     "share": 0.9051818241148604,
+     "share_se": 0.003297041454284644
+    },
+    "BF": {
+     "persons": 62.675,
+     "persons_se": 0.2490687784734498,
+     "share": 0.9044570341988939,
+     "share_se": 0.003165351660875604
+    },
+    "FREI": {
+     "persons": 52.275,
+     "persons_se": 0.5500437045572624,
+     "share": 0.7544430679225217,
+     "share_se": 0.007962847665540172
+    },
+    "MITTE": {
+     "persons": 59.825,
+     "persons_se": 0.3159996348586011,
+     "share": 0.8633304606223261,
+     "share_se": 0.004254462657888514
+    },
+    "WEIT_E": {
+     "persons": 54.625,
+     "persons_se": 0.5600909953542577,
+     "share": 0.7882492161742649,
+     "share_se": 0.007838149392233828
+    }
+   }
+  },
+  {
+   "rule": "KING",
+   "dist": "familie",
+   "load": 1.5,
+   "seats": 160,
+   "offline_mean": 69.875,
+   "offline_optimal": 40,
+   "n": 40,
+   "behaviours": {
+    "FF": {
+     "persons": 62.75,
+     "persons_se": 0.25255108647964924,
+     "share": 0.8980048936570675,
+     "share_se": 0.003182790320941374
+    },
+    "BF": {
+     "persons": 62.7,
+     "persons_se": 0.24599353754279912,
+     "share": 0.8972906079427819,
+     "share_se": 0.0030855639703536225
+    },
+    "FREI": {
+     "persons": 53.0,
+     "persons_se": 0.533493565673837,
+     "share": 0.7585446075663467,
+     "share_se": 0.007680001360325335
+    },
+    "MITTE": {
+     "persons": 60.1,
+     "persons_se": 0.29482719841133537,
+     "share": 0.8600734048560135,
+     "share_se": 0.003842292185907709
+    },
+    "WEIT_E": {
+     "persons": 55.675,
+     "persons_se": 0.5710847752416628,
+     "share": 0.796718897044984,
+     "share_se": 0.007934114131194152
+    }
+   }
+  }
+ ]
+}
