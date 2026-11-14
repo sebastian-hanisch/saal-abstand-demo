@@ -91,9 +91,22 @@ In einem **Saal mit Abstandsregel** (zwischen fremden Gruppen bleibt ein Platz f
 **exakte Offline-Optimum**, das die ganze Folge kennt. Dazu kommen drei **Abstandsregeln** (seitlich, Schachbrett, streng), ein **Saal mit Bogen** und eine **feste Sperrmatrix**.
 
 Alle Annahmen (Gruppenmischungen, Gästeverhalten, Regeln) sind Regler oder gesetzt, keine Messdaten. Weiter unten: der **Saalplan** einer Folge, drei **Kernfragen**, sechs **Experimente** mit vorgerechneten
-Messreihen und die Expander **🔧 Wie wir das erreichen – vollständiger Methodenvergleich**, **📐 Mathematische Formulierung** und **🚧 Wo die Annahmen enden**.
+Messreihen und die Expander **🔧 Wie wir das erreichen – vollständiger Methodenvergleich**, **📐 Mathematische Formulierung** und **🚧 Wo die Annahmen enden**. Wer es ohne Fachwörter lesen will, öffnet **💬 In einfachen Worten**.
 """
 )
+
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/saal-abstand-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+In einem Saal mit Abstandsregel bleibt zwischen fremden Gruppen ein Platz frei. Gruppen von einer bis sechs Personen kommen nacheinander und werden sofort gesetzt oder abgewiesen. Die Frage ist, wer die Plätze aussuchen soll: ein Platzanweiser, der von links her füllt, oder die Gäste selbst, und wie die Gäste wählen, wenn sie zufällig wählen, die Mitte nehmen oder Abstand suchen.
+
+Die App spielt dieselben Anfragefolgen für jede Vergabeweise durch und misst, wie viel Prozent der bestmöglichen Personenzahl erreicht werden. Dazu kommen drei Abstandsregeln, ein Saal mit Bogen und eine feste Sperrmatrix. Der Saal ist ausgedacht, und das Verhalten der Gäste ist eine Annahme.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/saal-abstand-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
 st.caption("🔗 Die Adresszeile oben spiegelt Ihre aktuelle Konfiguration wider – einfach kopieren, um ein Szenario zu teilen.")
 
 load_permalink_settings()
@@ -256,6 +269,24 @@ Alle Zufallsfolgen kommen aus einem eigenen SplitMix64; die Live-Rechnung nutzt 
             st.caption("Die Einstellungen haben sich geändert: erneut „Offline-Optimum rechnen“.")
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/saal-abstand-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben sind ein Saal mit Reihen der Längen $L_r$, eine Folge von Gruppen der Größen $g$ und eine Abstandsregel. Gesucht sind die gesetzten Personen je Vergabeweise im Vergleich zum Offline-Optimum, dem Ergebnis eines ganzzahligen Programms, das die ganze Folge kennt. Die zweite Formel gilt für lauter gleich große Gruppen in einer Reihe, die dritte für zufällige Wahl von Einzelnen in einer Reihe.
+
+| Symbol | Bedeutung |
+|---|---|
+| $R, L_r$ | Zahl der Reihen, Plätze der Reihe $r$ |
+| $g, d_g$ | Gruppengröße, Zahl der Anfragen dieser Größe |
+| $x_p, g_p$ | Platzierung $p$ gewählt (0 oder 1), ihre Gruppengröße |
+| $o_c$ | Zahl der gewählten Platzierungen mit einem Platz auf der Zelle $c$ (ohne die Lücke) |
+| $L$ | Plätze einer Reihe |
+| $E(n)$ | erwartete besetzte Plätze einer Reihe mit $n$ Plätzen bei zufälliger Wahl von Einzelnen |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/saal-abstand-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown(
         r"""
 **Gegeben:** ein Saal mit $R$ Reihen der Längen $L_r$ (Plätze), eine Folge von Gruppen der Größen $g_1, g_2, \dots$ und eine Abstandsregel: Zellen verschiedener Gruppen dürfen nicht benachbart sein.
@@ -265,7 +296,7 @@ Jede Gruppe wird sofort gesetzt (zusammenhängend in einer Reihe) oder abgewiese
 
 $$\max \sum_p g_p \, x_p \quad \text{mit} \quad \sum_{p:\, g_p = g} x_p \le d_g \ \text{ und } \ \sum_{p \ni c} x_p \le 1 \ \text{ für jede Zelle } c \text{ einer virtuellen Strecke.}$$
 
-Seitlich belegt eine Platzierung der Größe $g$ eine virtuelle Strecke von $g + 1$ Plätzen (Gruppe plus Lücke): ein Intervallgraph, die Bedingung ist exakt. Vorn/hinten und diagonal (Schachbrett, streng) kommt je Zellpaar $o_c + o_{c'} \le 1$ hinzu, wobei $o_c = \sum_{p \ni c} x_p$ die Zahl der Platzierungen ist, die die Zelle $c$ belegen. Die Strecke am Reihenende reicht gedanklich über die Wand, dort ist keine Lücke nötig.
+Seitlich belegt eine Platzierung der Größe $g$ eine virtuelle Strecke von $g + 1$ Plätzen (Gruppe plus Lücke): ein Intervallgraph, die Bedingung ist exakt. Vorn/hinten und diagonal (Schachbrett, streng) kommt je Zellpaar $o_c + o_{c'} \le 1$ hinzu, wobei $o_c$ die Zahl der gewählten Platzierungen ist, die mit einem Platz auf der Zelle $c$ selbst sitzen (die Lückenzelle zählt nicht). Die Strecke am Reihenende reicht gedanklich über die Wand, dort ist keine Lücke nötig.
 
 **Reihe, gleiche Gruppen:** In einer Reihe mit $L$ Plätzen passen höchstens
 
@@ -276,13 +307,6 @@ Personen in Gruppen der Größe $g$ (Bin-Packing mit Behältern der Länge $L + 
 **Freie Wahl, Einzelne:** Wählt jeder Gast gleichverteilt unter den zulässigen Plätzen einer Reihe mit $n$ Plätzen, ist die erwartete Besetzung $E(n)$ mit $E(n) = 0$ für $n \le 0$ und
 
 $$E(n) = \frac{1}{n} \sum_{i=1}^{n} \bigl(1 + E(i - 2) + E(n - i - 1)\bigr).$$
-
-| Symbol | Bedeutung |
-|---|---|
-| $R, L_r$ | Zahl der Reihen, Plätze der Reihe $r$ |
-| $g, d_g$ | Gruppengröße, Zahl der Anfragen dieser Größe |
-| $x_p, g_p$ | Platzierung $p$ gewählt (0/1), ihre Gruppengröße |
-| $E(n)$ | erwartete besetzte Plätze einer Reihe mit $n$ Plätzen bei freier Wahl von Einzelnen |
 
 **Anteil am Offline-Optimum:** gesetzte Personen durch die Personen des Optimums derselben Folge, gemittelt über die Folgen.
 """
