@@ -1,7 +1,6 @@
 # Saal mit Abstand: Wer vergibt die Plätze? – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-saal-abstand-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-saal-abstand-demo.streamlit.app/)**
 
 Fall-Demo für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (Themenseite „Sitzplätze optimieren“). Ein **Saal** (Kino, Hörsaal, Theater) hat eine **Abstandsregel**: zwischen fremden Gruppen bleibt ein Platz frei.
 Gruppen von einer bis sechs Personen kommen nacheinander und werden sofort gesetzt oder abgewiesen. Die Demo vergleicht fünf **Vergabeweisen** auf denselben Anfragefolgen: ein **Platzanweiser** (links, engste Lücke), **Gäste, die frei wählen**,
