@@ -131,7 +131,7 @@ with st.sidebar:
     assign = st.selectbox("Wer wählt den Platz?", list(C.ASSIGNS), key="assign_select", format_func=lambda k: C.ASSIGN_LABELS[k],
                           help="Platzanweiser links, Platzanweiser engste Lücke, Gäste wählen frei (gleichverteilt unter allen zulässigen Plätzen), die Mitte nehmen oder Abstand zu allen Gästen suchen.")
     st.header("🎲 Zufall")
-    seed = st.number_input("Zufalls-Seed", *bounds("seed_input"), key="seed_input", help="Gleicher Seed, gleiche Anfragefolgen (eigener Zufallsgenerator).")
+    seed = st.number_input("Zufalls-Seed", *bounds("seed_input"), key="seed_input", help="Gleicher Zufalls-Seed, gleiche Anfragefolgen (eigener Zufallsgenerator).")
     st.button("🎲 Neuen Zufalls-Seed würfeln", on_click=randomize_seed)
 
 params = Params(rows=rows, cols=cols, hall=hall, rule=rule, dist=dist, load=load, assign=assign)
