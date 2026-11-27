@@ -91,7 +91,10 @@ def analyse(settings: Settings) -> Analysis:
 def singles_capacity(params: Params) -> int:
     """Größte Zahl Einzelner im Saal (exakt)."""
     demand = [500] + [0] * (C.GMAX - 1)
-    return offline_optimum(params, demand, C.OFFLINE_TLIMIT).persons
+    off = offline_optimum(params, demand, C.OFFLINE_TLIMIT)
+    if off.status != 0:
+        raise RuntimeError("Größte Zahl Einzelner innerhalb der Zeitgrenze nicht bewiesen")
+    return off.persons
 
 
 def free_singles(params: Params, runs: int, seed: int) -> dict:

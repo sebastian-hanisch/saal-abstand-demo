@@ -67,7 +67,7 @@ def offline_optimum(params: Params, demand, tlimit: float = C.OFFLINE_TLIMIT) ->
     A = sp.csr_matrix((np.ones(len(rows)), (rows, cols)), shape=(k, n))
     c_obj = -np.array([p[2] for p in pl], dtype=float)
     t = time.time()
-    res = milp(c_obj, constraints=LinearConstraint(A, -np.inf, np.array(ub)), integrality=np.ones(n), bounds=Bounds(0, 1), options={"time_limit": tlimit, "disp": False})
+    res = milp(c_obj, constraints=LinearConstraint(A, -np.inf, np.array(ub)), integrality=np.ones(n), bounds=Bounds(0, 1), options={"mip_rel_gap": 0.0, "time_limit": tlimit, "disp": False})
     seconds = time.time() - t
     if res.x is None:
         return OfflineResult(None, 2, seconds, n)

@@ -55,12 +55,16 @@ def template_for(params: Params):
             A.append([float(p[s]) for _, p in cols] + [-w[s]])
             lo.append(0.0)
             hi.append(np.inf)
-    res = milp(np.array([0.0] * n + [-1.0]), constraints=LinearConstraint(np.array(A), lo, hi), integrality=np.array([1] * n + [0]), bounds=Bounds(0, np.inf))
+    res = milp(np.array([0.0] * n + [-1.0]), constraints=LinearConstraint(np.array(A), lo, hi), integrality=np.array([1] * n + [0]), bounds=Bounds(0, np.inf), options={"mip_rel_gap": 0.0})
+    if res.status != 0:
+        raise RuntimeError(f"Vorlagen-MILP (Faktor) nicht gelöst: {res.message}")
     t = -res.fun
     A2 = [r[:] for r in A] + [[0.0] * n + [1.0]]
     lo2 = list(lo) + [t * (1 - 1e-6)]          # Toleranz: HiGHS meldet t um etwa 1e-6 zu hoch, bei 1e-9 wäre das zweite Programm unlösbar
     hi2 = list(hi) + [np.inf]
-    res2 = milp(np.array([-persons(p) for _, p in cols] + [0.0]), constraints=LinearConstraint(np.array(A2), lo2, hi2), integrality=np.array([1] * n + [0]), bounds=Bounds(0, np.inf))
+    res2 = milp(np.array([-persons(p) for _, p in cols] + [0.0]), constraints=LinearConstraint(np.array(A2), lo2, hi2), integrality=np.array([1] * n + [0]), bounds=Bounds(0, np.inf), options={"mip_rel_gap": 0.0})
+    if res2.status != 0:
+        raise RuntimeError(f"Vorlagen-MILP (Personen) nicht gelöst: {res2.message}")
     by_len = {}
     for i, x in enumerate(res2.x[:n]):
         if x > 0.5:
